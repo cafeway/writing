@@ -188,6 +188,7 @@ return [
     */
 
     'debug' => env('APP_DEBUG', true),
+    'key' => env('base64:g9n0MAznuI+LAM2kBixXLNj4ZHw8Ep0FCpLT841Mtew='),
     /*
     |--------------------------------------------------------------------------
     | Class Aliases
