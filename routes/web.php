@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ChatController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
@@ -8,7 +9,7 @@ use Illuminate\Auth\Events\Login;
 use App\Http\Controllers\ResetpasswordController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\ProfileController;
-
+use App\Http\Controllers\PlaceOrderController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,3 +36,11 @@ Route::post('/logout', [LogoutController::class, 'logout'])->name('logout');
 
 //profile page
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
+
+// PLACING AND POSTING ORDERS
+Route::get('/PlaceOrder', [PlaceOrderController::class,'index'])->name('placeorder');
+Route::post('/PlaceOrder', [PlaceOrderController::class, 'place']);
+
+// CHAT ROUTES
+Route::get('/chat', [ChatController::class, 'index'])->name('chat');
+Route::post('/chat',[ChatController::class, 'post']);

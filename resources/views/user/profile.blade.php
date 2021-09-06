@@ -264,7 +264,7 @@
                         <ul class="dropdown-menu">
                             <li><a class="nav-link" href="layout-default.html">Manage Orders</a></li>
 
-                            <li><a class="nav-link" href="layout-top-navigation.html">Place Order</a></li>
+                            <li><a class="nav-link" href="{{ route('placeorder') }}">Place Order</a></li>
                         </ul>
                     </li>
 {{--
@@ -294,7 +294,7 @@
                         </ul>
                     </li> --}}
                     <li class="dropdown">
-                        <a href="#" class="nav-link has-dropdown"><i class="fa fa-dollar"></i> <span>Billing & Payments</span></a>
+                        <a href="#" class="nav-link has-dropdown"><i class="fa fa-university"></i> <span>Billing & Payments</span></a>
                         <ul class="dropdown-menu">
                             <li><a class="nav-link" href="components-article.html">Fund Account</a></li>
                             <li><a class="nav-link beep beep-sidebar" href="components-avatar.html">Disburse Payments</a></li>
@@ -395,7 +395,7 @@
                     <li class="dropdown">
                         <a href="#" class="nav-link has-dropdown"><i class="fa fa-paper-plane"></i> <span>Contact Us</span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="utilities-contact.html">Initiate Discord</a></li>
+                            <li><a href="{{ route('chat') }}">Start Chat</a></li>
                             <li><a class="nav-link" href="utilities-invoice.html">Whatsapp</a></li>
                             <li><a href="utilities-subscribe.html">Telegram</a></li>
                         </ul>

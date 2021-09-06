@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- index.html  Tue, 07 Jan 2020 03:35:33 GMT -->
+<!-- components-chat-box.html  Tue, 07 Jan 2020 03:36:58 GMT -->
 <head>
 <meta charset="UTF-8">
 <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-<title> Dashboard &mdash</title>
+<title>Components &rsaquo; Chat Box &mdash; CodiePie</title>
 
 <!-- General CSS Files -->
-<link rel="stylesheet" href="{{ URL::asset('assets/modules/bootstrap/css/bootstrap.min.css') }}">
-<link rel="stylesheet" href="{{ URL::asset('assets/modules/fontawesome/css/all.min.css') }}">
+<link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
 
 <!-- CSS Libraries -->
-<link rel="stylesheet" href="{{ URL::asset('assets/modules/jqvmap/dist/jqvmap.min.css') }}">
-<link rel="stylesheet" href="{{ URL::asset('assets/modules/summernote/summernote-bs4.css') }}">
-<link rel="stylesheet" href="{{ URL::asset('assets/modules/owlcarousel2/dist/assets/owl.carousel.min.css') }}">
-<link rel="stylesheet" href="{{ URL::asset('assets/modules/owlcarousel2/dist/assets/owl.theme.default.min.css') }}">
 
 <!-- Template CSS -->
-<link rel="stylesheet" href=" {{ URL::asset('assets/css/style.min.css') }}">
-<link rel="stylesheet" href=" {{ URL::asset('assets/css/components.min.css') }}">
+<link rel="stylesheet" href="assets/css/style.min.css">
+<link rel="stylesheet" href="assets/css/components.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
 </head>
+
 <body class="layout-4">
 <!-- Page Loader -->
 <div class="page-loader-wrapper">
@@ -33,7 +30,7 @@
     <div class="main-wrapper main-wrapper-1">
         <div class="navbar-bg"></div>
 
-        <!-- Start app top navbar -->
+              <!-- Start app top navbar -->
         <nav class="navbar navbar-expand-lg main-navbar">
             <form class="form-inline mr-auto">
                 <ul class="navbar-nav mr-3">
@@ -397,7 +394,7 @@
                     <li class="dropdown">
                         <a href="#" class="nav-link has-dropdown"><i class="fa fa-paper-plane"></i> <span>Contact Us</span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="{{ route('chat') }}">Start Chat</a></li>
+                            <li><a href="{{ route('chat') }}">Start chat</a></li>
                             <li><a class="nav-link" href="utilities-invoice.html">Whatsapp</a></li>
                             <li><a href="utilities-subscribe.html">Telegram</a></li>
                         </ul>
@@ -416,164 +413,86 @@
         <!-- Start app main Content -->
         <div class="main-content">
             <section class="section">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="card card-statistic-2">
-                        <div class="card-stats">
-                        <div class="card-stats-title">Your Account Statistics -
-                            <div class="dropdown d-inline">
-                            <a class="font-weight-600 dropdown-toggle" data-toggle="dropdown" href="#" id="orders-month">August</a>
-                            <ul class="dropdown-menu dropdown-menu-sm">
-                                <li class="dropdown-title">Select Month</li>
-                                <li><a href="#" class="dropdown-item">January</a></li>
-                                <li><a href="#" class="dropdown-item">February</a></li>
-                                <li><a href="#" class="dropdown-item">March</a></li>
-                                <li><a href="#" class="dropdown-item">April</a></li>
-                                <li><a href="#" class="dropdown-item">May</a></li>
-                                <li><a href="#" class="dropdown-item">June</a></li>
-                                <li><a href="#" class="dropdown-item">July</a></li>
-                                <li><a href="#" class="dropdown-item active">August</a></li>
-                                <li><a href="#" class="dropdown-item">September</a></li>
-                                <li><a href="#" class="dropdown-item">October</a></li>
-                                <li><a href="#" class="dropdown-item">November</a></li>
-                                <li><a href="#" class="dropdown-item">December</a></li>
-                            </ul>
-                            </div>
-                        </div>
-                        <div class="card-stats-items">
-                            <div class="card-stats-item">
-                                <div class="card-stats-item-count">24</div>
-                                <div class="card-stats-item-label">Pending</div>
-                            </div>
-                            <div class="card-stats-item">
-                                <div class="card-stats-item-count">12</div>
-                                <div class="card-stats-item-label">Desputed</div>
-                            </div>
-                            <div class="card-stats-item">
-                                <div class="card-stats-item-count">23</div>
-                                <div class="card-stats-item-label">Completed</div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="card-icon shadow-primary bg-primary">
-                        <i class="fas fa-archive"></i>
-                        </div>
-                        <div class="card-wrap">
-                        <div class="card-header">
-                            <h4>Total Orders</h4>
-                        </div>
-                        <div class="card-body">
-                            59
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="card card-statistic-2">
-                        <div class="card-chart">
-                        <canvas id="balance-chart" height="80"></canvas>
-                        </div>
-                        <div class="card-icon shadow-primary bg-primary">
-                        <i class="fas fa-dollar-sign"></i>
-                        </div>
-                        <div class="card-wrap">
-                        <div class="card-header">
-                            <h4>Balance</h4>
-                        </div>
-                        <div class="card-body">
-                            $187,13
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="card card-statistic-2">
-                        <div class="card-chart">
-                        <canvas id="sales-chart" height="80"></canvas>
-                        </div>
-                        <div class="card-icon shadow-primary bg-primary">
-                        <i class="fas fa-shopping-bag"></i>
-                        </div>
-                        <div class="card-wrap">
-                        <div class="card-header">
-                            <h4>Sales</h4>
-                        </div>
-                        <div class="card-body">
-                            4,732
-                        </div>
-                        </div>
-                    </div>
+                <div class="section-header">
+                    <h1>Welcome To The Chat Box</h1>
+                    <div class="section-header-breadcrumb">
+                        <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
+                        <div class="breadcrumb-item"><a href="#">Components</a></div>
+                        <div class="breadcrumb-item">Chat Box</div>
                     </div>
                 </div>
 
-                <div class="row row-deck">
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4>Invoices</h4>
-                                <div class="card-header-action">
-                                    <a href="#" class="btn btn-danger">View More <i class="fas fa-chevron-right"></i></a>
+                <div class="section-body">
+                    <p class="section-lead">All disputes are settled here before comming into a consensus</p>
+
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4>Online Agents</h4>
                                 </div>
-                            </div>
-                            <div class="card-body p-0">
-                                <div class="table-responsive table-invoice">
-                                    <table class="table table-striped">
-                                    <tr>
-                                        <th>Invoice ID</th>
-                                        <th>Customer</th>
-                                        <th>Status</th>
-                                        <th>Due Date</th>
-                                        <th>Action</th>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">INV-87239</a></td>
-                                        <td class="font-weight-600">Kusnadi</td>
-                                        <td><div class="badge badge-warning">Unpaid</div></td>
-                                        <td>July 19, 2018</td>
-                                        <td>
-                                        <a href="#" class="btn btn-primary">Detail</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">INV-48574</a></td>
-                                        <td class="font-weight-600">Susie Willis</td>
-                                        <td><div class="badge badge-success">Paid</div></td>
-                                        <td>July 21, 2018</td>
-                                        <td>
-                                        <a href="#" class="btn btn-primary">Detail</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">INV-76824</a></td>
-                                        <td class="font-weight-600">Muhamad Nuruzzaki</td>
-                                        <td><div class="badge badge-warning">Unpaid</div></td>
-                                        <td>July 22, 2018</td>
-                                        <td>
-                                        <a href="#" class="btn btn-primary">Detail</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">INV-84990</a></td>
-                                        <td class="font-weight-600">Agung Ardiansyah</td>
-                                        <td><div class="badge badge-warning">Unpaid</div></td>
-                                        <td>July 22, 2018</td>
-                                        <td>
-                                        <a href="#" class="btn btn-primary">Detail</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">INV-87320</a></td>
-                                        <td class="font-weight-600">Ardian Rahardiansyah</td>
-                                        <td><div class="badge badge-success">Paid</div></td>
-                                        <td>July 28, 2018</td>
-                                        <td>
-                                        <a href="#" class="btn btn-primary">Detail</a>
-                                        </td>
-                                    </tr>
-                                    </table>
+                                <div class="card-body">
+                                    <ul class="list-unstyled list-unstyled-border">
+                                        <li class="media">
+                                            <img alt="image" class="mr-3 rounded-circle" width="50" src="assets/img/avatar/avatar-1.png">
+                                            <div class="media-body">
+                                                <div class="mt-0 mb-1 font-weight-bold">Victor</div>
+                                                <div class="text-success text-small font-600-bold"><i class="fas fa-circle"></i> Online</div>
+                                            </div>
+                                        </li>
+                                        <li class="media">
+                                            <img alt="image" class="mr-3 rounded-circle" width="50" src="assets/img/avatar/avatar-2.png">
+                                            <div class="media-body">
+                                                <div class="mt-0 mb-1 font-weight-bold">Justin</div>
+                                                <div class="text-small font-weight-600 text-muted"><i class="fas fa-circle"></i> Offline</div>
+                                            </div>
+                                        </li>
+                                        <li class="media">
+                                            <img alt="image" class="mr-3 rounded-circle" width="50" src="assets/img/avatar/avatar-3.png">
+                                            <div class="media-body">
+                                                <div class="mt-0 mb-1 font-weight-bold">Brian</div>
+                                                <div class="text-small font-weight-600 text-success"><i class="fas fa-circle"></i> Online</div>
+                                            </div>
+                                        </li>
+                                        <li class="media">
+                                            <img alt="image" class="mr-3 rounded-circle" width="50" src="assets/img/avatar/avatar-4.png">
+                                            <div class="media-body">
+                                                <div class="mt-0 mb-1 font-weight-bold">Brish</div>
+                                                <div class="text-small font-weight-600 text-success"><i class="fas fa-circle"></i> Online</div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-12 col-sm-6 col-lg-8">
+                            <div class="card chat-box" id="mychatbox">
+                                <div class="card-header">
+                                    <h4>Chat with Rizal</h4>
+                                </div>
+                                <div class="card-body chat-content"></div>
+                                <div class="card-footer chat-form">
+                                    <form id="chat-form">
+                                        <input type="text" class="form-control" placeholder="Type a message">
+                                        <button class="btn btn-primary"><i class="far fa-paper-plane"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        {{-- <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="card chat-box card-success" id="mychatbox2">
+                                <div class="card-header">
+                                    <h4><i class="fas fa-circle text-success mr-2" title="Online" data-toggle="tooltip"></i> Chat with Ryan</h4>
+                                </div>
+                                <div class="card-body chat-content"></div>
+                                <div class="card-footer chat-form">
+                                    <form id="chat-form2">
+                                        <input type="text" class="form-control" placeholder="Type a message">
+                                        <button class="btn btn-primary"><i class="far fa-paper-plane"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div> --}}
                     </div>
                 </div>
             </section>
@@ -592,23 +511,17 @@
 </div>
 
 <!-- General JS Scripts -->
-<script src="{{ URL::asset('assets/bundles/lib.vendor.bundle.js') }}"></script>
-<script src=" {{ URL::asset('js/CodiePie.js') }}"></script>
-
+<script src="assets/bundles/lib.vendor.bundle.js"></script>
+<script src="js/CodiePie.js"></script>
 <!-- JS Libraies -->
-<script src="assets/modules/jquery.sparkline.min.js {{ URL::asset('js/page/modules-sparkline.js') }}"></script>
-<script src=" {{ URL::asset('assets/modules/chart.min.js') }}"></script>
-<script src=" {{ URL::asset('assets/modules/owlcarousel2/dist/owl.carousel.min.js') }}"></script>
-<script src="{{ URL::asset('assets/modules/summernote/summernote-bs4.js') }}"></script>
-<script src="{{ URL::asset('assets/modules/chocolat/dist/js/jquery.chocolat.min.js') }}"></script>
 
 <!-- Page Specific JS File -->
-<script src="{{ URl::asset('js/page/index.js') }}"></script>
-<script src="https://use.fontawesome.com/312e90a705.js"></script>
+<script src="js/page/components-chat-box.js"></script>
+
 <!-- Template JS File -->
-<script src="{{ URL::asset('js/scripts.js') }}"></script>
-<script src="{{ URL::asset('js/custom.js') }}"></script>
+<script src="js/scripts.js"></script>
+<script src="js/custom.js"></script>
 </body>
 
-<!-- index.html  Tue, 07 Jan 2020 03:35:33 GMT -->
+<!-- components-chat-box.html  Tue, 07 Jan 2020 03:36:59 GMT -->
 </html>
