@@ -17,6 +17,6 @@ class LoginController extends Controller
         {
             dd('you logged in successfuly');
         }
-        return redirect($to = '/');
+        return redirect($to = '/home');
     }
 }

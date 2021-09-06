@@ -28,7 +28,7 @@ class RegisterController extends Controller
             'city' => $request -> country,
             'postalcode' => $request -> postalcode,
         ]);
-        return route($to = '/login');
+        return route($to = '/');
 
     }
 }
