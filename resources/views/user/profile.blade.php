@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- index.html  Tue, 07 Jan 2020 03:35:33 GMT -->
+<!-- features-profile.html  Tue, 07 Jan 2020 03:35:31 GMT -->
 <head>
 <meta charset="UTF-8">
 <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-<title> Dashboard &mdash</title>
+<title>Profile &mdash; CodiePie</title>
 
 <!-- General CSS Files -->
-<link rel="stylesheet" href="{{ URL::asset('assets/modules/bootstrap/css/bootstrap.min.css') }}">
-<link rel="stylesheet" href="{{ URL::asset('assets/modules/fontawesome/css/all.min.css') }}">
+<link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
 
 <!-- CSS Libraries -->
-<link rel="stylesheet" href="{{ URL::asset('assets/modules/jqvmap/dist/jqvmap.min.css') }}">
-<link rel="stylesheet" href="{{ URL::asset('assets/modules/summernote/summernote-bs4.css') }}">
-<link rel="stylesheet" href="{{ URL::asset('assets/modules/owlcarousel2/dist/assets/owl.carousel.min.css') }}">
-<link rel="stylesheet" href="{{ URL::asset('assets/modules/owlcarousel2/dist/assets/owl.theme.default.min.css') }}">
+<link rel="stylesheet" href="assets/modules/bootstrap-social/bootstrap-social.css">
+<link rel="stylesheet" href="assets/modules/summernote/summernote-bs4.css">
 
 <!-- Template CSS -->
-<link rel="stylesheet" href=" {{ URL::asset('assets/css/style.min.css') }}">
-<link rel="stylesheet" href=" {{ URL::asset('assets/css/components.min.css') }}">
+<link rel="stylesheet" href="assets/css/style.min.css">
+<link rel="stylesheet" href="assets/css/components.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
 </head>
+
 <body class="layout-4">
 <!-- Page Loader -->
 <div class="page-loader-wrapper">
@@ -32,7 +31,6 @@
 <div id="app">
     <div class="main-wrapper main-wrapper-1">
         <div class="navbar-bg"></div>
-
         <!-- Start app top navbar -->
         <nav class="navbar navbar-expand-lg main-navbar">
             <form class="form-inline mr-auto">
@@ -253,9 +251,9 @@
                     <li class="menu-header">UserPanel</li>
                     <li><a class="nav-link" href="{{ route('home') }}"><i class="fas fa-home"></i> <span>Home</span></a></li>
                     <li class="dropdown">
-                        <a href="{{ route('profile') }}" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-user"></i> <span>Profile</span></a>
+                        <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-user"></i> <span>Profile</span></a>
                         <ul class="dropdown-menu">
-                            <li><a class="nav-link" href="layout-default.html">View Profile</a></li>
+                            <li><a class="nav-link" href="{{ route('profile') }}">View Profile</a></li>
 
                             <li><a class="nav-link" href="layout-top-navigation.html">Edit Profile</a></li>
                             <li><a class="nav-link" href="layout-top-navigation.html">Change password</a></li>
@@ -412,166 +410,103 @@
                 </div>
             </aside>
         </div>
-
         <!-- Start app main Content -->
         <div class="main-content">
             <section class="section">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="card card-statistic-2">
-                        <div class="card-stats">
-                        <div class="card-stats-title">Your Account Statistics -
-                            <div class="dropdown d-inline">
-                            <a class="font-weight-600 dropdown-toggle" data-toggle="dropdown" href="#" id="orders-month">August</a>
-                            <ul class="dropdown-menu dropdown-menu-sm">
-                                <li class="dropdown-title">Select Month</li>
-                                <li><a href="#" class="dropdown-item">January</a></li>
-                                <li><a href="#" class="dropdown-item">February</a></li>
-                                <li><a href="#" class="dropdown-item">March</a></li>
-                                <li><a href="#" class="dropdown-item">April</a></li>
-                                <li><a href="#" class="dropdown-item">May</a></li>
-                                <li><a href="#" class="dropdown-item">June</a></li>
-                                <li><a href="#" class="dropdown-item">July</a></li>
-                                <li><a href="#" class="dropdown-item active">August</a></li>
-                                <li><a href="#" class="dropdown-item">September</a></li>
-                                <li><a href="#" class="dropdown-item">October</a></li>
-                                <li><a href="#" class="dropdown-item">November</a></li>
-                                <li><a href="#" class="dropdown-item">December</a></li>
-                            </ul>
-                            </div>
-                        </div>
-                        <div class="card-stats-items">
-                            <div class="card-stats-item">
-                                <div class="card-stats-item-count">24</div>
-                                <div class="card-stats-item-label">Pending</div>
-                            </div>
-                            <div class="card-stats-item">
-                                <div class="card-stats-item-count">12</div>
-                                <div class="card-stats-item-label">Desputed</div>
-                            </div>
-                            <div class="card-stats-item">
-                                <div class="card-stats-item-count">23</div>
-                                <div class="card-stats-item-label">Completed</div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="card-icon shadow-primary bg-primary">
-                        <i class="fas fa-archive"></i>
-                        </div>
-                        <div class="card-wrap">
-                        <div class="card-header">
-                            <h4>Total Orders</h4>
-                        </div>
-                        <div class="card-body">
-                            59
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="card card-statistic-2">
-                        <div class="card-chart">
-                        <canvas id="balance-chart" height="80"></canvas>
-                        </div>
-                        <div class="card-icon shadow-primary bg-primary">
-                        <i class="fas fa-dollar-sign"></i>
-                        </div>
-                        <div class="card-wrap">
-                        <div class="card-header">
-                            <h4>Balance</h4>
-                        </div>
-                        <div class="card-body">
-                            $187,13
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="card card-statistic-2">
-                        <div class="card-chart">
-                        <canvas id="sales-chart" height="80"></canvas>
-                        </div>
-                        <div class="card-icon shadow-primary bg-primary">
-                        <i class="fas fa-shopping-bag"></i>
-                        </div>
-                        <div class="card-wrap">
-                        <div class="card-header">
-                            <h4>Sales</h4>
-                        </div>
-                        <div class="card-body">
-                            4,732
-                        </div>
-                        </div>
-                    </div>
+                <div class="section-header">
+                    <h1>Profile</h1>
+                    <div class="section-header-breadcrumb">
+                        <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
+                        <div class="breadcrumb-item">Profile</div>
                     </div>
                 </div>
+                <div class="section-body">
+                    <h2 class="section-title">Hello {{ Auth::user()->username}}</h2>
+                    <p class="section-lead">Change information about yourself on this page.</p>
 
-                <div class="row row-deck">
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4>Invoices</h4>
-                                <div class="card-header-action">
-                                    <a href="#" class="btn btn-danger">View More <i class="fas fa-chevron-right"></i></a>
+                    <div class="row mt-sm-4">
+                        {{-- <div class="col-12 col-md-12 col-lg-5">
+                            <div class="card profile-widget">
+                                <div class="profile-widget-header">
+                                    <img alt="image" src="assets/img/avatar/avatar-1.png" class="rounded-circle profile-widget-picture">
+                                    <div class="profile-widget-items">
+                                        <div class="profile-widget-item">
+                                            <div class="profile-widget-item-label">Posts</div>
+                                            <div class="profile-widget-item-value">187</div>
+                                        </div>
+                                        <div class="profile-widget-item">
+                                            <div class="profile-widget-item-label">Followers</div>
+                                            <div class="profile-widget-item-value">6,8K</div>
+                                        </div>
+                                        <div class="profile-widget-item">
+                                            <div class="profile-widget-item-label">Following</div>
+                                            <div class="profile-widget-item-value">2,1K</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile-widget-description">
+                                    <div class="profile-widget-name">Michelle Green <div class="text-muted d-inline font-weight-normal"><div class="slash"></div> Web Developer</div></div>
+                                    Michelle Green is a superhero name in <b>USA</b>, especially in my family. He is not a fictional character but an original hero in my family, a hero for his children and for his wife. So, I use the name as a user in this template. Not a tribute, I'm just bored with <b>'John Doe'</b>.
+                                </div>
+                                <div class="card-footer text-center">
+                                    <div class="font-weight-bold mb-2">Follow Michelle On</div>
+                                    <a href="#" class="btn btn-social-icon btn-facebook mr-1"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="btn btn-social-icon btn-twitter mr-1"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="btn btn-social-icon btn-github mr-1"><i class="fab fa-github"></i></a>
+                                    <a href="#" class="btn btn-social-icon btn-instagram"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
-                            <div class="card-body p-0">
-                                <div class="table-responsive table-invoice">
-                                    <table class="table table-striped">
-                                    <tr>
-                                        <th>Invoice ID</th>
-                                        <th>Customer</th>
-                                        <th>Status</th>
-                                        <th>Due Date</th>
-                                        <th>Action</th>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">INV-87239</a></td>
-                                        <td class="font-weight-600">Kusnadi</td>
-                                        <td><div class="badge badge-warning">Unpaid</div></td>
-                                        <td>July 19, 2018</td>
-                                        <td>
-                                        <a href="#" class="btn btn-primary">Detail</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">INV-48574</a></td>
-                                        <td class="font-weight-600">Susie Willis</td>
-                                        <td><div class="badge badge-success">Paid</div></td>
-                                        <td>July 21, 2018</td>
-                                        <td>
-                                        <a href="#" class="btn btn-primary">Detail</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">INV-76824</a></td>
-                                        <td class="font-weight-600">Muhamad Nuruzzaki</td>
-                                        <td><div class="badge badge-warning">Unpaid</div></td>
-                                        <td>July 22, 2018</td>
-                                        <td>
-                                        <a href="#" class="btn btn-primary">Detail</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">INV-84990</a></td>
-                                        <td class="font-weight-600">Agung Ardiansyah</td>
-                                        <td><div class="badge badge-warning">Unpaid</div></td>
-                                        <td>July 22, 2018</td>
-                                        <td>
-                                        <a href="#" class="btn btn-primary">Detail</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="#">INV-87320</a></td>
-                                        <td class="font-weight-600">Ardian Rahardiansyah</td>
-                                        <td><div class="badge badge-success">Paid</div></td>
-                                        <td>July 28, 2018</td>
-                                        <td>
-                                        <a href="#" class="btn btn-primary">Detail</a>
-                                        </td>
-                                    </tr>
-                                    </table>
-                                </div>
+                        </div> --}}
+                        <div class="col-12 col-md-12 col-lg-12">
+                            <div class="card">
+                                <form method="post" class="needs-validation" novalidate="">
+                                    <div class="card-header">
+                                        <h4>Edit Profile</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="form-group col-md-6 col-12">
+                                                <label>First Name</label>
+                                                <input type="text" class="form-control" value="Michelle" required="">
+                                                <div class="invalid-feedback">Please fill in the first name</div>
+                                            </div>
+                                            <div class="form-group col-md-6 col-12">
+                                                <label>Last Name</label>
+                                                <input type="text" class="form-control" value="Green" required="">
+                                                <div class="invalid-feedback">Please fill in the last name</div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-md-7 col-12">
+                                                <label>Email</label>
+                                                <input type="email" class="form-control" value="Michelle@Green.com" required="">
+                                                <div class="invalid-feedback">Please fill in the email</div>
+                                            </div>
+                                            <div class="form-group col-md-5 col-12">
+                                                <label>Phone</label>
+                                                <input type="tel" class="form-control" value="">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-12">
+                                                <label>Bio</label>
+                                                <textarea class="form-control summernote-simple">Michelle Green is a superhero name in <b>USA</b>, especially in my family. He is not a fictional character but an original hero in my family, a hero for his children and for his wife. So, I use the name as a user in this template. Not a tribute, I'm just bored with <b>'John Doe'</b>.</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group mb-0 col-12">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" name="remember" class="custom-control-input" id="newsletter">
+                                                    <label class="custom-control-label" for="newsletter">Subscribe to newsletter</label>
+                                                    <div class="text-muted form-text">You will get new information about products, offers and promotions</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer text-right">
+                                        <button class="btn btn-primary">Save Changes</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -582,7 +517,7 @@
         <!-- Start app Footer part -->
         <footer class="main-footer">
             <div class="footer-left">
-                 <div class="bullet"></div>  <a href="templateshub.net">Templates Hub</a>
+
             </div>
             <div class="footer-right">
 
@@ -592,23 +527,18 @@
 </div>
 
 <!-- General JS Scripts -->
-<script src="{{ URL::asset('assets/bundles/lib.vendor.bundle.js') }}"></script>
-<script src=" {{ URL::asset('js/CodiePie.js') }}"></script>
+<script src="assets/bundles/lib.vendor.bundle.js"></script>
+<script src="js/CodiePie.js"></script>
 
 <!-- JS Libraies -->
-<script src="assets/modules/jquery.sparkline.min.js {{ URL::asset('js/page/modules-sparkline.js') }}"></script>
-<script src=" {{ URL::asset('assets/modules/chart.min.js') }}"></script>
-<script src=" {{ URL::asset('assets/modules/owlcarousel2/dist/owl.carousel.min.js') }}"></script>
-<script src="{{ URL::asset('assets/modules/summernote/summernote-bs4.js') }}"></script>
-<script src="{{ URL::asset('assets/modules/chocolat/dist/js/jquery.chocolat.min.js') }}"></script>
+<script src="assets/modules/summernote/summernote-bs4.js"></script>
 
 <!-- Page Specific JS File -->
-<script src="{{ URl::asset('js/page/index.js') }}"></script>
-<script src="https://use.fontawesome.com/312e90a705.js"></script>
+
 <!-- Template JS File -->
-<script src="{{ URL::asset('js/scripts.js') }}"></script>
-<script src="{{ URL::asset('js/custom.js') }}"></script>
+<script src="js/scripts.js"></script>
+<script src="js/custom.js"></script>
 </body>
 
-<!-- index.html  Tue, 07 Jan 2020 03:35:33 GMT -->
+<!-- features-profile.html  Tue, 07 Jan 2020 03:35:33 GMT -->
 </html>

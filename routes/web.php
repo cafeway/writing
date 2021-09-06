@@ -7,6 +7,8 @@ use App\Http\Controllers\RegisterController;
 use Illuminate\Auth\Events\Login;
 use App\Http\Controllers\ResetpasswordController;
 use App\Http\Controllers\LogoutController;
+use App\Http\Controllers\ProfileController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,3 +32,6 @@ Route::get('/resetpassword',[ResetpasswordController::class,'index'])->name('res
 Route::post('/resetpassword',[ResetpasswordController::class,'Reset']);
 // logout
 Route::post('/logout', [LogoutController::class, 'logout'])->name('logout');
+
+//profile page
+Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
