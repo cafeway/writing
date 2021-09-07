@@ -296,7 +296,7 @@
                                 </ul>
                             </li> --}}
                             <li class="dropdown">
-                                <a href="#" class="nav-link has-dropdown"><i class="fa fa-money"></i> <span>Billing & Payments</span></a>
+                                <a href="#" class="nav-link has-dropdown"><i class="fa fa-university"></i> <span>Billing & Payments</span></a>
                                 <ul class="dropdown-menu">
                                     <li><a class="nav-link" href="components-article.html">Fund Account</a></li>
                                     <li><a class="nav-link beep beep-sidebar" href="components-avatar.html">Disburse Payments</a></li>
