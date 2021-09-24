@@ -30,7 +30,6 @@ https://linuxize.com/post/how-to-install-and-use-composer-on-ubuntu-18-04/</li>
     <li>
 3. cd into the root directory i.e /</li>
     <li>
-
 4. install dependencies using
 composer install</li>
 </ul>
