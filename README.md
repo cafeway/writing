@@ -23,11 +23,14 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 <ul>
 ##how to run this project on localhost
     <li>0 clone the repository to your local machine</li>
-1.install php latest version i.e php7.4
-https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-20-04
-2.install composer 
-https://linuxize.com/post/how-to-install-and-use-composer-on-ubuntu-18-04/
-3. cd into the root directory i.e /
+    <li>1.install php latest version i.e php7.4
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-20-04</li>
+    <li>2.install composer 
+https://linuxize.com/post/how-to-install-and-use-composer-on-ubuntu-18-04/</li>
+    <li>
+3. cd into the root directory i.e /</li>
+    <li>
+
 4. install dependencies using
-composer install
+composer install</li>
 </ul>
